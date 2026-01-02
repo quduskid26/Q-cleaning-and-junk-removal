@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q Cleaning & Junk Removal</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: #0a7cff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+.logo span {
+    color: #ffd700;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1581578731548-c64695cc6952");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 38px;
+}
+.hero button {
+    background: #ffd700;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* SECTIONS */
+.section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.1);
+}
+
+/* FORMS */
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+}
+button.submit {
+    background: #0a7cff;
+    color: white;
+    border: none;
+    padding: 14px;
+    cursor: pointer;
+}
+
+/* CONTACT */
+.contact {
+    background: #0a7cff;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Q <span>Cleaning</span> & Junk Removal</div>
+    <p>Fast • Affordable • Professional</p>
+</header>
+
+<section class="hero">
+    <h1>Cleaning & Junk Removal You Can Trust</h1>
+    <p>Residential & Commercial Services</p>
+    <button onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})">
+        Book Online
+    </button>
+</section>
+
+<section class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="card">Residential Cleaning</div>
+        <div class="card">Commercial Cleaning</div>
+        <div class="card">Move-In / Move-Out Cleaning</div>
+        <div class="card">Deep Cleaning</div>
+        <div class="card">Furniture Removal</div>
+        <div class="card">Construction Debris Removal</div>
+    </div>
+</section>
+
+<section class="section" id="booking">
+    <h2>Online Booking / Quote Request</h2>
+
+    <!-- BOOKING FORM -->
+    <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+
+        <select name="service">
+            <option>Cleaning Service</option>
+            <option>Junk Removal</option>
+            <option>Cleaning + Junk Removal</option>
+        </select>
+
+        <input type="date" name="date">
+        <textarea name="details" placeholder="Describe your job"></textarea>
+
+        <button class="submit" type="submit">Submit Request</button>
+    </form>
+</section>
+
+<section class="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Phone: YOUR PHONE NUMBER</p>
+    <p>📧 Email: YOUR EMAIL</p>
+</section>
+
+<footer>
+    © 2026 Q Cleaning & Junk Removal. All Rights Reserved.
+</footer>
+
+</body>
+</html>
